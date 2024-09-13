@@ -1,0 +1,172 @@
+/* Base común */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.centeredContent {
+    width: 400px;
+    padding: 20px;
+    background-color: rgb(75, 75, 75);
+    color: #eee;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: solid black 4px;
+    text-align: center;
+}
+
+/* Estilos para el formulario de registro */
+.form-container {
+    margin-top: 10vh;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    background-color: rgb(75, 75, 75);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 400px;
+    min-width: 300px;
+    font-family: Arial, sans-serif;
+    border: solid black 2px;
+}
+
+.inputs-container {
+    margin-top: 20px;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    border: solid black 2px;
+}
+
+form > div {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #ccc;
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+input[type="text"],
+input[type="password"],
+input[type="submit"],
+input[type="date"],
+input[type="time"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 2px solid #444;
+    background-color: #555;
+    color: #eee;
+    box-sizing: border-box;
+    border: solid black 2px;
+}
+
+input[type="submit"] {
+    background-color: #6AB04A;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px; /* Añadir espacio encima del botón */
+    margin-bottom: 20px; /* Añadir espacio debajo del botón */
+}
+
+input[type="submit"]:disabled {
+    background-color: #999;
+    cursor: not-allowed;
+}
+
+input[type="submit"]:hover:enabled {
+    background-color: #45a049;
+}
+
+input:focus {
+    border-color: #6AB04A;
+    outline: none;
+}
+
+::placeholder {
+    color: #999;
+}
+
+.error {
+    color: #ff4d4d;
+    font-size: 12px;
+    position: absolute;
+    bottom: -20px;
+    left: 10px;
+    width: calc(100% - 20px);
+}
+
+.passwordField {
+    position: relative;
+}
+
+.passwordField input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #444;
+    background-color: #555;
+    color: #eee;
+    box-sizing: border-box;
+    border: solid black 2px;
+}
+
+.passwordField button {
+    position: absolute !important;
+    top: 50% !important;
+    right: 5px;
+    transform: translateY(-50%) !important;
+    padding: 5px 10px !important;
+    border: none !important;
+    background-color: transparent !important;
+    cursor: pointer !important;
+    font-size: 12px !important;
+    z-index: 1 !important;
+}
+
+.passwordField button:focus {
+    outline: none !important;
+}
+
+.passwordField button:hover {
+    color: #6AB04A !important;
+}
+
+.passwordField input:focus + button {
+    z-index: 2 !important;
+}
+
+.conteiner-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo para el h1 dentro del formulario */
+form h1 {
+    color: black;
+    margin: 20px 0;
+    font-size: 24px;
+    background-color: blueviolet;
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}

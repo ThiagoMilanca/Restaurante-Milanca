@@ -1,0 +1,22 @@
+{
+  "name": "pm3-thiagomilanca",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "tsc && node ./dist/index.js",
+    "dev": "tsc --watch",
+    "lint": "eslint . --ext .ts"
+  },
+  "author": "Thiago Milanca",
+  "license": "ISC",
+  "keywords": [],
+  "description": "Proyecto Integrador M3 (Raiz)",
+  "dependencies": {
+    "typescript": "^4.0.0",
+    "express": "^4.17.1",
+    "eslint": "^7.32.0"
+  },
+  "devDependencies": {}
+}

@@ -1,0 +1,159 @@
+/* Base común */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.centeredContent {
+    width: 400px;
+    padding: 20px;
+    background-color: rgb(75, 75, 75);
+    color: #eee;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: solid black 4px;
+    text-align: center;
+}
+
+/* Estilos para el formulario de inicio de sesión */
+.login-page {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 400px;
+    min-width: 300px;
+    font-family: Arial, sans-serif;
+    border: solid black 2px;
+}
+
+.login-form div {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #ccc;
+    text-align: center;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"],
+.login-form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 2px solid #444;
+    background-color: #555;
+    color: #eee;
+    box-sizing: border-box;
+    border: solid black 2px;
+}
+
+.login-form input[type="submit"] {
+    background-color: #6AB04A;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.login-form input[type="submit"]:disabled {
+    background-color: #999;
+    cursor: not-allowed;
+}
+
+.login-form input[type="submit"]:hover:enabled {
+    background-color: #45a049;
+}
+
+.login-form input:focus {
+    border-color: #6AB04A;
+    outline: none;
+}
+
+.login-form ::placeholder {
+    color: #999;
+}
+
+.login-form .error {
+    color: #ff4d4d;
+    font-size: 12px;
+    margin-top: 5px;
+    position: absolute;
+    bottom: -20px;
+    left: 10px;
+    width: calc(100% - 20px);
+}
+
+.login-form .passwordField {
+    position: relative;
+}
+
+.login-form .passwordField input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #444;
+    background-color: #555;
+    color: #eee;
+    box-sizing: border-box;
+    border: solid black 2px;
+
+}
+
+.login-form .passwordField button {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    padding: 5px 10px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 12px;
+    z-index: 1;
+}
+
+.login-form .passwordField button:focus {
+    outline: none;
+}
+
+.login-form .passwordField button:hover {
+    color: #6AB04A;
+}
+
+.login-form .passwordField input:focus + button {
+    z-index: 2;
+}
+
+h1.login-title {
+    text-align: center;
+    color: black;
+    margin: 20px 0;
+    font-size: 24px;
+    background-color: blueviolet;
+    margin-bottom: 20px;
+}
+
+.conteiner-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,16 @@
+.homeContainer {
+    padding: 20px;
+    text-align: center;
+}
+
+.title {
+    font-size: 2em;
+    color: blueviolet;
+    text-align: center;
+}
+
+.mensajito {
+    font-size: 2em;
+    background-color: black;
+    color: blueviolet;
+}
